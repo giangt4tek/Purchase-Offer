@@ -1,0 +1,423 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_offer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-22 16:57+0000\n"
+"PO-Revision-Date: 2026-07-22 16:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "<span class=\"o_stat_text\">Purchase Order</span>"
+msgstr "<span class=\"o_stat_text\">Đơn Mua Hàng</span>"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: purchase_offer
+#: model:res.groups,name:purchase_offer.group_purchase_offer_manager
+msgid "Administrator"
+msgstr "Quản trị viên"
+
+#. module: purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "Approve"
+msgstr "Duyệt"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: purchase_offer
+#: model:ir.model.fields.selection,name:purchase_offer.selection__purchase_offer__state__cancel
+msgid "Cancelled"
+msgstr "Đã hủy"
+
+#. module: purchase_offer
+#: model:ir.model,name:purchase_offer.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: purchase_offer
+#: model:ir.model,name:purchase_offer.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields.selection,name:purchase_offer.selection__purchase_offer__state__confirmed
+msgid "Confirmed"
+msgstr "Đã xác nhận"
+
+#. module: purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "Create PO"
+msgstr "Tạo đơn mua hàng"
+
+#. module: purchase_offer
+#: model_terms:ir.actions.act_window,help:purchase_offer.action_purchase_offer
+msgid "Create a new Purchase Offer"
+msgstr "Tạo mới Phiếu Đề Xuất"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__create_uid
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__create_date
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__name
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__display_name
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__display_name
+#: model:ir.model.fields,field_description:purchase_offer.field_res_company__display_name
+#: model:ir.model.fields,field_description:purchase_offer.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields.selection,name:purchase_offer.selection__purchase_offer__state__draft
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__id
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__id
+#: model:ir.model.fields,field_description:purchase_offer.field_res_company__id
+#: model:ir.model.fields,field_description:purchase_offer.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_res_company__offer_approval_required
+#: model:ir.model.fields,help:purchase_offer.field_res_config_settings__offer_approval_required
+msgid ""
+"If checked, purchase offers will require manager approval before they can be"
+" confirmed."
+msgstr "Nếu bật, Phiếu Offer sẽ cần người quản lý duyệt trước khi có thể xác nhận."
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__message_has_error
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__write_uid
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__write_date
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: purchase_offer
+#. odoo-python
+#: code:addons/purchase_offer/models/purchase_offer.py:0
+msgid "New"
+msgstr "Mới"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__date_offer
+msgid "Offer Date"
+msgstr "Ngày tạo phiếu"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__name
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__offer_id
+msgid "Offer Reference"
+msgstr "Mã phiếu"
+
+#. module: purchase_offer
+#: model:ir.ui.menu,name:purchase_offer.menu_purchase_offer
+msgid "Offers"
+msgstr "Phiếu Đề Xuất"
+
+#. module: purchase_offer
+#: model:ir.model.fields.selection,name:purchase_offer.selection__purchase_offer__state__po_created
+msgid "PO Created"
+msgstr "Đã tạo báo giá"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__product_id
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__offer_line_ids
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "Products"
+msgstr "Sản phẩm"
+
+#. module: purchase_offer
+#: model:ir.model,name:purchase_offer.model_purchase_offer
+#: model:res.groups.privilege,name:purchase_offer.res_groups_privilege_purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "Purchase Offer"
+msgstr "Phiếu Đề Xuất"
+
+#. module: purchase_offer
+#: model:ir.model,name:purchase_offer.model_purchase_offer_line
+msgid "Purchase Offer Line"
+msgstr "Chi tiết Phiếu Đề Xuất"
+
+#. module: purchase_offer
+#: model:ir.actions.act_window,name:purchase_offer.action_purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_tree
+msgid "Purchase Offers"
+msgstr "Phiếu Đề Xuất"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__purchase_order_id
+msgid "Purchase Order"
+msgstr "Đơn mua hàng"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__product_qty
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__requester_id
+msgid "Requester"
+msgstr "Người yêu cầu"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_res_company__offer_approval_required
+#: model:ir.model.fields,field_description:purchase_offer.field_res_config_settings__offer_approval_required
+msgid "Require Offer Approval"
+msgstr "Yêu cầu duyệt Phiếu Đề Xuất"
+
+#. module: purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.res_config_settings_view_form_purchase_offer
+msgid "Require managers to approve purchase offers"
+msgstr "Yêu cầu người quản lý duyệt Phiếu Đề Xuất"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "Set to Draft"
+msgstr "Đặt làm nháp"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__state
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: purchase_offer
+#: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
+msgid "Submit"
+msgstr "Xác nhận"
+
+#. module: purchase_offer
+#: model:ir.model.fields.selection,name:purchase_offer.selection__purchase_offer__state__to_approve
+msgid "To Approve"
+msgstr "Chờ duyệt"
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer_line__product_uom_id
+msgid "Unit of Measure"
+msgstr "Đơn vị tính"
+
+#. module: purchase_offer
+#: model:res.groups,name:purchase_offer.group_purchase_offer_user
+msgid "User"
+msgstr "Người dùng"
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__partner_id
+msgid "Vendor"
+msgstr "Nhà cung cấp"
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__partner_id
+msgid "Vendor is required before creating a Purchase Order."
+msgstr "Bắt buộc chọn Nhà cung cấp trước khi tạo Đơn mua hàng."
+
+#. module: purchase_offer
+#: model:ir.model.fields,field_description:purchase_offer.field_purchase_offer__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: purchase_offer
+#: model:ir.model.fields,help:purchase_offer.field_purchase_offer__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: purchase_offer
+#. odoo-python
+#: code:addons/purchase_offer/models/purchase_offer.py:0
+msgid "You must add at least one product before creating a Purchase Order."
+msgstr "Bạn phải thêm ít nhất một sản phẩm trước khi tạo Đơn mua hàng."
+
+#. module: purchase_offer
+#. odoo-python
+#: code:addons/purchase_offer/models/purchase_offer.py:0
+msgid "You must select a Vendor before creating a Purchase Order."
+msgstr "Bạn phải chọn Nhà cung cấp trước khi tạo Đơn mua hàng."

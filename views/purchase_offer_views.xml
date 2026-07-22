@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="view_purchase_offer_form" model="ir.ui.view">
+        <field name="name">purchase.offer.form</field>
+        <field name="model">purchase.offer</field>
+        <field name="arch" type="xml">
+            <form string="Purchase Offer">
+                <header>
+                    <button name="action_submit" string="Submit" type="object" invisible="state != 'draft'" class="oe_highlight"/>
+                    <button name="action_confirm" string="Approve" type="object" invisible="state != 'to_approve'" class="oe_highlight" groups="purchase_offer.group_purchase_offer_manager"/>
+                    <button name="action_create_po" string="Create PO" type="object" invisible="state != 'confirmed'" class="oe_highlight"/>
+                    <button name="action_cancel" string="Cancel" type="object" invisible="state in ('cancel', 'po_created')"/>
+                    <button name="action_draft" string="Set to Draft" type="object" invisible="state != 'cancel'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,po_created"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button type="object" name="action_view_po" class="oe_stat_button" icon="fa-shopping-cart" invisible="not purchase_order_id">
+                            <div class="o_field_statinfo">
+                                <span class="o_stat_text">Purchase Order</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="requester_id" readonly="state != 'draft'" invisible="1"/>
+                            <field name="partner_id" readonly="state == 'po_created'"/>
+                        </group>
+                        <group>
+                            <field name="date_offer" readonly="state != 'draft'"/>
+                            <field name="purchase_order_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Products" name="products">
+                            <field name="offer_line_ids" readonly="state in ('approved', 'po_created', 'cancel')">
+                                <list editable="bottom">
+                                    <field name="product_id"/>
+                                    <field name="name"/>
+                                    <field name="product_qty"/>
+                                    <field name="product_uom_id" groups="uom.group_uom"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <!-- <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div> -->
+            </form>
+        </field>
+    </record>
+
+    <!-- List View -->
+    <record id="view_purchase_offer_tree" model="ir.ui.view">
+        <field name="name">purchase.offer.tree</field>
+        <field name="model">purchase.offer</field>
+        <field name="arch" type="xml">
+            <list string="Purchase Offers">
+                <field name="name"/>
+                <field name="requester_id"/>
+                <field name="partner_id" optional="show"/>
+                <field name="date_offer"/>
+                <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-warning="state == 'to_approve'" decoration-success="state in ('approved', 'po_created')"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_purchase_offer" model="ir.actions.act_window">
+        <field name="name">Purchase Offers</field>
+        <field name="res_model">purchase.offer</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new Purchase Offer
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_purchase_offer"
+              name="Offers"
+              parent="purchase.menu_procurement_management"
+              action="action_purchase_offer"
+              sequence="-100"/>
+
+</odoo>
