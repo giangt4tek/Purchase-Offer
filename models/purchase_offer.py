@@ -127,7 +127,6 @@ class PurchaseOfferLine(models.Model):
     @api.onchange('product_id')
     def _onchange_product_id(self):
         if self.product_id:
-            self.name = self.product_id.display_name
             self.product_uom_id = getattr(self.product_id, 'uom_po_id', self.product_id.uom_id).id
 
     
