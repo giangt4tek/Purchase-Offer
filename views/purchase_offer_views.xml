@@ -38,7 +38,7 @@
                     </group>
                     <notebook>
                         <page string="Products" name="products">
-                            <field name="offer_line_ids" readonly="state in ('approved', 'po_created', 'cancel')">
+                            <field name="offer_line_ids" readonly="state in ('approved', 'po_created', 'cancel', 'blocked')">
                                 <list editable="bottom">
                                     <field name="product_id"/>
                                     <field name="name"/>
