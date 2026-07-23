@@ -77,8 +77,8 @@ class PurchaseOffer(models.Model):
 
     def action_create_po(self):
         for rec in self:
-            if not rec.partner_id:
-                raise UserError(_('You must select a Vendor before creating a Purchase Order.'))
+            # if not rec.partner_id:
+            #     raise UserError(_('You must select a Vendor before creating a Purchase Order.'))
             if not rec.offer_line_ids:
                 raise UserError(_('You must add at least one product before creating a Purchase Order.'))
 

@@ -24,14 +24,11 @@ class PurchaseOrder(models.Model):
 
     partner_id = fields.Many2one(
         'res.partner', string='Vendor', change_default=True,
-        tracking=True, check_company=True, index=True,
+        tracking=True, check_company=True, index=True, required=False,
         help="You can find a vendor by its Name, TIN, Email or Internal Reference.")
 
     @api.constrains('partner_id')
     def _check_unique_code(self):
         for rec in self:
-            if not rec.partner_id:
+            if not rec.partner_id and rec.state != 'draft':
                 raise ValidationError('Vui lòng chọn Nhà Cung Cấp (Vendor).')
-            
-            if self.sudo().search_count([('partner_id', '=', rec.partner_id.id), ('id', '!=', rec.id)]) > 0:
-                raise ValidationError('Mã Nhân Viên "%s" đã tồn tại trong hệ thống.' % rec.partner_id.name)
