@@ -51,6 +51,11 @@ msgid "Administrator"
 msgstr "Quản trị viên"
 
 #. module: purchase_offer
+#: model:res.groups,name:purchase_offer.group_purchase_offer_approve
+msgid "Approve"
+msgstr "Người phê duyệt"
+
+#. module: purchase_offer
 #: model_terms:ir.ui.view,arch_db:purchase_offer.view_purchase_offer_form
 msgid "Approve"
 msgstr "Duyệt"

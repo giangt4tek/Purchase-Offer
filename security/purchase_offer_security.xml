@@ -15,11 +15,18 @@
         <field name="privilege_id" ref="res_groups_privilege_purchase_offer"/>
     </record>
 
+    <record id="group_purchase_offer_approve" model="res.groups">
+        <field name="name">Approve</field>
+        <field name="sequence">20</field>
+        <field name="implied_ids" eval="[(4, ref('group_purchase_offer_user'))]"/>
+        <field name="privilege_id" ref="res_groups_privilege_purchase_offer"/>
+    </record>
+
     <record id="group_purchase_offer_manager" model="res.groups">
         <field name="name">Administrator</field>
-        <field name="sequence">20</field>
+        <field name="sequence">100</field>
         <field name="privilege_id" ref="res_groups_privilege_purchase_offer"/>
-        <field name="implied_ids" eval="[(4, ref('group_purchase_offer_user'))]"/>
+        <field name="implied_ids" eval="[(4, ref('group_purchase_offer_user')), (4, ref('group_purchase_offer_approve'))]"/>
         <field name="user_ids" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
     </record>
 </odoo>
